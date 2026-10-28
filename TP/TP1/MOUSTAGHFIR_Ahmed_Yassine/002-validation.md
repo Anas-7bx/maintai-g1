@@ -1,6 +1,6 @@
 # ADR 002 : valider les relevés et répondre 503 si le modèle manque
 
-Date : 28/10/2026 · Auteurs : MOUSTAGHFIR Ahmed Yassine
+Date : 28/10/2026 · Auteurs : MOUSTAGHFIR Ahmed Yassine (G1)
 
 ## Contexte
 L'API reçoit un relevé JSON et doit refuser une valeur impossible avant d'appeler le modèle. Elle doit aussi dire clairement quoi faire si `models/model.joblib` n'est pas encore là. Ces deux choix figent le contrat vu par les clients.
