@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environnements
+.venv/
+venv/
+env/
+.env
+
+# Données et modèles (DVC / MLflow plus tard)
+data/*.csv
+models/
