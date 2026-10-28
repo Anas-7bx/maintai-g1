@@ -108,4 +108,5 @@ curl.exe -X POST http://localhost:8000/v1/predict -H "Content-Type: application/
 
 ## Ce qui reste flou
 
-…
+- Comment l'API MaintAI remplacera la règle simple « température > 80 » par la vraie prédiction du modèle entraîné (ce sera le TP1).
+- Pourquoi `--reload` ne recharge pas toujours l'API sous Windows : pendant les tests, il a fallu arrêter et relancer uvicorn pour voir le nouveau champ.
