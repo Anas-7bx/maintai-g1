@@ -1,6 +1,6 @@
 # Compte rendu · TP1 : une API de prédiction pour MaintAI
 
-**Groupe :** non indiqué  ·  **Membres :** MOUSTAGHFIR Ahmed Yassine  ·  **Date :** 28/10/2026
+**Groupe :** G1  ·  **Membres :** MOUSTAGHFIR Ahmed Yassine  ·  **Date :** 28/10/2026
 
 > Remplissez chaque partie dans ce fichier, puis rendez-le avec la pull request du TP1.
 > Collez les sorties du terminal entre les lignes ``` (trois accents graves).
