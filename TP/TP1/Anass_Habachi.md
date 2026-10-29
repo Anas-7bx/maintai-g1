@@ -113,4 +113,6 @@ En bas de la page, dans la section **Schemas**, en ouvrant `SensorReading` : cha
 
 ## 8. Ce qui reste flou
 
-…
+- **Les valeurs possibles mais jamais vues à l'entraînement.** Le schéma accepte par exemple 140 °C ou 90 mm/s, parce que ces valeurs sont physiquement possibles, alors que `sensors.csv` ne va pas aussi loin. Le modèle renvoie quand même une probabilité, mais je ne sais pas si on peut lui faire confiance dans ce cas. Comment l'API devrait-elle le signaler (un avertissement dans la réponse, un journal) ? Et comment surveiller la dérive des données en production ?
+- **Mettre à jour le modèle sans couper l'API.** Le modèle est chargé une seule fois, au démarrage : après un nouvel entraînement, il faut redémarrer uvicorn. Je ne vois pas encore comment on remplace le modèle dans une vraie application sans interrompre les clients (tableau de bord, application mobile), ni comment `model_version` aide à savoir quel modèle a répondu.
+- **Le seuil d'alerte de 0,3.** Il est fixé dans `model_info.json` au moment de l'entraînement. Je ne sais pas encore qui doit le choisir (l'équipe de maintenance ou l'équipe data) ni s'il devrait pouvoir changer sans réentraîner le modèle.
