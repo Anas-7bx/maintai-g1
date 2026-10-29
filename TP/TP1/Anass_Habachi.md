@@ -106,10 +106,10 @@ En bas de la page, dans la section **Schemas**, en ouvrant `SensorReading` : cha
 
 ## 7. Le rendu Git
 
-- Lien de la pull request : …
-- Le tag `tp1` existe sur GitHub : oui / non
+- Lien de la pull request : https://github.com/Anas-7bx/maintai-g1/pull/1
+- Le tag `tp1` existe sur GitHub : oui (posé sur le commit de fusion `5b1b3cb`, voir https://github.com/Anas-7bx/maintai-g1/releases/tag/tp1)
 - Qui a relu la pull request, et quel commentaire a-t-il laissé ?
-  …
+  Personne : la pull request a été fusionnée le 29/10/2026 sans relecture d'un coéquipier, faute de disponibilité. Avant la fusion, j'ai vérifié moi-même la branche fusionnée : `python -m pytest` donne 13 passed pour TP1 et 8 passed pour TP0, aucun conflit, et ni données, ni modèle, ni `.venv` dans les changements.
 
 ## 8. Ce qui reste flou
 
