@@ -190,11 +190,11 @@ Dernière ligne de `python -m pytest` avec `headers=HEADERS` :
 
 ## 8. Le rendu Git
 
-- Lien de la pull request : …
-- Le tag `tp2` existe sur GitHub : oui / non
-- `git status` avant le commit : le fichier `.env` apparaissait-il ? oui / non
+- Lien de la pull request : https://github.com/Anas-7bx/maintai-g1/pull/2
+- Le tag `tp2` existe sur GitHub : oui, sous la forme `TP2` (majuscules) ; la pull request #2 est fusionnée
+- `git status` avant le commit : le fichier `.env` apparaissait-il ? **non** (seul `.env.example` apparaissait ; `.env` est dans `.gitignore`)
 - Qui a relu la pull request, et quel commentaire a-t-il laissé ?
-  …
+  Personne : la pull request #2 a été fusionnée sans relecture ni commentaire d'un coéquipier.
 
 ## 9. Ce qui reste flou
 
