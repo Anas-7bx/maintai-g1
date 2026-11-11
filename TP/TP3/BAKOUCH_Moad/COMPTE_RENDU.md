@@ -144,8 +144,8 @@ Parce que, dans Streamlit, **ce n'est pas le navigateur qui appelle l'API**. Le 
 
 ## 6. Le rendu Git
 
-- Lien de la pull request : … *(à compléter)*
-- Le tag `tp3` existe sur GitHub : oui / non
+- Lien de la pull request : https://github.com/Anas-7bx/maintai-g1/pull/10
+- Le tag `tp3` existe sur GitHub : oui (tag de groupe `tp3`, sur la fusion de la PR #4)
 - `git status` avant le commit : `.env`, `data/` ou `models/` apparaissaient-ils ? **non** (exclus par `.gitignore` : `.env`, `data/*.csv`, `models/`)
 
 ## 7. Ce qui reste flou
