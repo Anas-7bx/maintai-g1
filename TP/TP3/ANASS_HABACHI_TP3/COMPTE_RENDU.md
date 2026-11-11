@@ -61,6 +61,10 @@ st.scatter_chart(df_nuage, x="temperature_c", y="vibration_mm_s", color="panne")
 | Taux de panne | 13.6 % |
 | Température moyenne | 59.8 °C |
 
+![Indicateurs et barres pour vibration_mm_s](captures/donnees_barres_vibration.png)
+
+![Nuage de points température / vibration, coloré selon la panne](captures/donnees_nuage.png)
+
 Choisissez `vibration_mm_s` dans la liste. Comment évolue le taux de panne quand la vibration augmente ?
 
 Le taux de panne augmente fortement avec la vibration. Il est d'environ 2 % pour les vibrations les plus faibles, passe à 10 %, 32 %, 66 % et 84 % pour les tranches suivantes, puis atteint 100 % pour les vibrations les plus élevées (8 barres seulement : deux des 10 tranches ne contiennent aucun relevé et disparaissent grâce à `observed=True`). C'est la variable la plus déterminante : à titre de comparaison, le taux de panne par tranche de température monte seulement jusqu'à environ 37 %, celui de la charge jusqu'à 25 % et celui des heures de fonctionnement jusqu'à 19 %.
@@ -100,6 +104,18 @@ Avec l'API lancée (`uvicorn maintai.api.main:app --reload --env-file .env`) :
 | valeurs par défaut, fausse clé | Avertissement jaune : « L'API a refusé le relevé (code 401) : Clé API absente ou invalide » |
 | API arrêtée (Ctrl+C dans le terminal d'uvicorn) | Erreur rouge : « API injoignable (http://localhost:8000). Vérifiez qu'uvicorn tourne et que l'URL est correcte. » |
 
+**Bonne clé :**
+
+![Prédiction avec la bonne clé : 95 % et alerte](captures/prediction_bonne_cle.png)
+
+**Fausse clé :**
+
+![Prédiction avec une fausse clé : erreur 401](captures/prediction_fausse_cle_401.png)
+
+**API arrêtée :**
+
+![Prédiction avec l'API arrêtée : API injoignable](captures/prediction_api_injoignable.png)
+
 Le port 8501 n'est pas dans `MAINTAI_CORS_ORIGINS`, et pourtant la prédiction fonctionne. Pourquoi ?
 
 CORS est une protection appliquée par le navigateur : il bloque une page JavaScript qui appelle une API d'une autre origine, sauf si l'API l'autorise. Dans Streamlit, ce n'est pas le navigateur qui appelle l'API : c'est le serveur Streamlit (du code Python, via `httpx`) qui envoie la requête. Le navigateur ne parle qu'à Streamlit, il n'y a donc aucune requête inter-origines à contrôler, et CORS n'intervient pas.
@@ -116,7 +132,7 @@ CORS est une protection appliquée par le navigateur : il bloque une page JavaSc
 ## 6. Le rendu Git
 
 - Lien de la pull request : https://github.com/Anas-7bx/maintai-g1/pull/4 (branche `tp3-anass`, dossier `TP/TP3/ANASS_HABACHI_TP3`)
-- Le tag `tp3` existe sur GitHub : non, pas encore (il se pose après la fusion de la pull request)
+- Le tag `tp3` existe sur GitHub : **oui**, posé sur le commit de fusion de la pull request #4
 - `git status` avant le commit : `.env`, `data/` ou `models/` apparaissaient-ils ? **non** : seuls `ui/app.py`, `maintai/client.py` et `COMPTE_RENDU.md` ont été ajoutés au dépôt
 
 ## 7. Ce qui reste flou
