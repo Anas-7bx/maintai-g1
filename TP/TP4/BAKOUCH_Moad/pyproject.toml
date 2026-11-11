@@ -1,0 +1,34 @@
+# Fiche d'identité du package maintai : lue par pip install et par python -m build
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maintai"
+dynamic = ["version"]  # lue dans maintai/__init__.py (voir plus bas)
+description = "Prédiction de panne de machines à partir de relevés de capteurs (modèle, API, client, commande)"
+readme = "README.md"
+requires-python = ">=3.11"
+# Ce que le code de maintai/ importe pour fonctionner : des minimums (>=), pas des versions figées
+dependencies = [
+    "numpy>=1.26",        # dataset.py
+    "pandas>=2.2",        # data.py, dataset.py, predict.py
+    "scikit-learn>=1.5",  # data.py, train.py (et pour relire model.joblib)
+    "joblib>=1.4",        # train.py, predict.py
+    "httpx>=0.27",        # client.py
+]
+
+[project.optional-dependencies]
+api = ["fastapi>=0.115", "uvicorn[standard]>=0.30"]
+ui = ["streamlit>=1.40"]
+dev = ["pytest>=8", "ruff"]
+
+# Une commande installée dans .venv\Scripts\maintai-predict.exe, qui appelle maintai.cli.main
+[project.scripts]
+maintai-predict = "maintai.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "maintai.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["maintai*"]  # seul le dossier maintai/ entre dans le package
