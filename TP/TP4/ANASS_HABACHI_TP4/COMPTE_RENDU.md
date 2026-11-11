@@ -152,7 +152,7 @@ C'est pour cela que `requirements.txt` fixe `scikit-learn==1.8.0` (exactement), 
 
 ## 5. Le rendu Git
 
-- Lien de la pull request : PR_LIEN
+- Lien de la pull request : https://github.com/Anas-7bx/maintai-g1/pull/12 (branche `tp4-anass`, dossier `TP/TP4/ANASS_HABACHI_TP4`)
 - Le tag `tp4` existe sur GitHub : non, pas encore (il se pose après la fusion de la pull request)
 - `git status` avant le commit : `dist/`, `build/` ou `maintai.egg-info/` apparaissaient-ils ? **non** : seuls `pyproject.toml` et `COMPTE_RENDU.md` ont été ajoutés au dépôt. Le wheel se reconstruit avec `python -m build`, il ne va pas dans Git.
 
