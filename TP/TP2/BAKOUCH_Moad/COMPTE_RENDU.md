@@ -217,11 +217,11 @@ Dernière ligne de `python -m pytest` avec `headers=HEADERS` :
 
 ## 8. Le rendu Git
 
-- Lien de la pull request : … *(à compléter après la création de la PR)*
-- Le tag `tp2` existe sur GitHub : oui / non
+- Lien de la pull request : https://github.com/Anas-7bx/maintai-g1/pull/9
+- Le tag `tp2` existe sur GitHub : oui (`tp2`, sur la fusion de la PR #3)
 - `git status` avant le commit : le fichier `.env` apparaissait-il ? **non** (il est dans `.gitignore`, ligne `.env`)
 - Qui a relu la pull request, et quel commentaire a-t-il laissé ?
-  …
+  … *(à compléter par le relecteur du groupe)*
 
 ## 9. Ce qui reste flou
 
