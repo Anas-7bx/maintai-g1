@@ -113,10 +113,10 @@ Dans la section **Schemas** en bas de la page, sous `SensorReading`. Chaque cham
 
 ## 7. Le rendu Git
 
-- Lien de la pull request : … *(à compléter après la création de la PR sur GitHub)*
-- Le tag `tp1` existe sur GitHub : oui / non
+- Lien de la pull request : https://github.com/Anas-7bx/maintai-g1/pull/8
+- Le tag `tp1` existe sur GitHub : oui (tag de groupe `tp1`, posé après la fusion de la PR #1)
 - Qui a relu la pull request, et quel commentaire a-t-il laissé ?
-  …
+  … *(à compléter par le relecteur du groupe)*
 
 ## 8. Ce qui reste flou
 
