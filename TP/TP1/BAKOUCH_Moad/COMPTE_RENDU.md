@@ -33,7 +33,9 @@ Les deux tests qui attendent un 422 passent pour une mauvaise raison. Le schéma
 | `load_pct` | `float` | 0 | 120 | 0 % à vide ; une surcharge brève jusqu'à ~120 % est possible (facteur de service 1,15 à 1,2), et c'est justement un cas à risque à ne pas refuser. |
 | `runtime_hours` | `float` | 0 | 200 000 | Un compteur n'est jamais négatif ; 200 000 h, c'est environ 23 ans en 24 h/24, la durée de vie maximale d'une machine. `float`, car 15 000,5 h est légitime. |
 
-Justification détaillée : `docs/adr/002-validation.md`.
+Justification détaillée : `002-validation.md` (dans ce dossier).
+
+> Note : le code commun du groupe (`TP/TP1/maintai/api/schemas.py`) garde des bornes plus larges (`vibration_mm_s` ≤ 100, `load_pct` ≤ 150). Les deux choix passent les 13 tests et `tests/test_casser.py` (18 passed). Je propose 50 mm/s et 120 % pour les raisons ci-dessus (ISO 10816, facteur de service) ; à trancher en groupe dans l'ADR 002.
 
 Après avoir écrit `schemas.py` seul, que donne `python -m pytest`, et quel est le message d'erreur des tests qui échouent ? Pourquoi est-ce un bon signe ?
 
