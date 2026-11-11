@@ -115,7 +115,7 @@ CORS est une protection appliquée par le navigateur : il bloque une page JavaSc
 
 ## 6. Le rendu Git
 
-- Lien de la pull request : branche `tp3-anass`, dossier `TP/TP3/ANASS_HABACHI_TP3` (lien de la PR à ajouter une fois la PR ouverte)
+- Lien de la pull request : https://github.com/Anas-7bx/maintai-g1/pull/4 (branche `tp3-anass`, dossier `TP/TP3/ANASS_HABACHI_TP3`)
 - Le tag `tp3` existe sur GitHub : non, pas encore (il se pose après la fusion de la pull request)
 - `git status` avant le commit : `.env`, `data/` ou `models/` apparaissaient-ils ? **non** : seuls `ui/app.py`, `maintai/client.py` et `COMPTE_RENDU.md` ont été ajoutés au dépôt
 
