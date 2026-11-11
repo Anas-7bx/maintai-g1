@@ -1,0 +1,8 @@
+prune tests
+prune ui
+prune web
+prune docs
+prune data
+prune models
+prune .streamlit
+global-exclude *.csv
