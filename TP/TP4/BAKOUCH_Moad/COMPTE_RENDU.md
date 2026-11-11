@@ -151,8 +151,8 @@ Installer exactement cette version (celle de `requirements.txt`) supprime l'aver
 
 ## 5. Le rendu Git
 
-- Lien de la pull request : … *(à compléter)*
-- Le tag `tp4` existe sur GitHub : oui / non
+- Lien de la pull request : https://github.com/Anas-7bx/maintai-g1/pull/11
+- Le tag `tp4` existe sur GitHub : non, à poser après la fusion de la PR #11 (`git tag tp4`, `git push --tags`)
 - `git status` avant le commit : `dist/`, `build/` ou `maintai.egg-info/` apparaissaient-ils ? **non** (exclus par le `.gitignore` du starter : `dist/`, `build/`, `*.egg-info/`, `.venv/`, `models/`, `data/*.csv`)
 
 ## 6. Ce qui reste flou
