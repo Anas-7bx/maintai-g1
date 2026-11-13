@@ -26,7 +26,7 @@ python -m pytest
 
 ```bash
 cp .env.example .env
-# clé dans .env.example : AYM16Fv2004
+# puis remplacez changez-moi par votre clé dans .env (jamais dans Git)
 uvicorn maintai.api.main:app --reload --env-file .env
 ```
 

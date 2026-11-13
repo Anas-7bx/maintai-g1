@@ -136,7 +136,7 @@ Dernière ligne de `python -m pytest` avec `headers=HEADERS` :
 1. Quelle différence entre 401 et 422 ? Et entre 401 et 403 ?
    401 : la clé est absente ou fausse, on ne sait pas qui appelle. 422 : l'appelant est accepté, mais le relevé est invalide (500 °C, champ manquant). 403 : on sait qui appelle, mais il n'a pas le droit. Le 403 n'est pas utilisé dans ce TP.
 2. Pourquoi la clé n'est-elle ni dans le code ni dans Git ? Que contiennent `.env` et `.env.example`, et lequel est commité ?
-   Une clé dans le code finit sur GitHub pour toujours, même après un `git rm`. `.env` contient la vraie clé et les origines ; il est ignoré. `.env.example` est commité, avec la clé `AYM16Fv2004` : il dit quoi configurer.
+   Une clé dans le code finit sur GitHub pour toujours, même après un `git rm`. `.env` contient la vraie clé et les origines ; il est ignoré. `.env.example` est commité, avec la fausse valeur `changez-moi` : il dit quoi configurer.
 3. Pourquoi la clé voyage-t-elle dans un en-tête et pas dans l'URL ?
    Une URL est écrite dans les journaux du serveur, l'historique du navigateur et l'en-tête Referer. L'en-tête `X-API-Key` ne l'est pas de la même façon.
 4. Que fait `secrets.compare_digest` de plus qu'un simple `==` ?
