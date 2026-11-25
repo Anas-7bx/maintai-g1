@@ -271,7 +271,7 @@ Voir `docs/adr/004-choix-du-modele.md` : régression logistique (C = 1.0), seuil
 
 ## 7. Le rendu Git
 
-- Lien de la pull request : …
+- Lien de la pull request : https://github.com/Anas-7bx/maintai-g1/pull/13
 - Le tag `tp5` existe sur GitHub : oui / non
 - `git status` avant le commit : `mlflow.db`, `mlruns/`, `data/sensors.csv` ou `.dvc/cache` apparaissaient-ils ? non.
   Ils sont tous exclus par le `.gitignore` (et `.dvc/cache`, `.dvc/config.local` par `.dvc/.gitignore`) : `git status`
